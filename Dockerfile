@@ -7,4 +7,6 @@ RUN apt-get update -y && \
 
 RUN echo "root:render128" | chpasswd
 
+EXPOSE 22
+
 CMD ["/usr/bin/shellinabox", "-t", "-s", "/:LOGIN"]
